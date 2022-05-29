@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import NavTabs from './NavTabs';
+import NavTabs from './header/NavTabs';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
@@ -9,7 +9,7 @@ import Resume from './pages/Resume';
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('About');
 
-  // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
+  // Displays current page
   const renderPage = () => {
     if (currentPage === 'About') {
       return <About />;
@@ -23,8 +23,10 @@ export default function PortfolioContainer() {
     return <Resume />;
   };
 
+  // Receives page change
   const handlePageChange = (page) => setCurrentPage(page);
 
+  // renders page, and communicates with nave tabs
   return (
     <main>
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
