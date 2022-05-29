@@ -7,7 +7,7 @@ import NavTabs from './NavTabs';
 
 export default function Header() {
   return (
-    <div>
+    <header>
       {/* Name/Author */}
       <h1>Tim Zalewski, Pharm.D.</h1>
       {/* Hero image */}
@@ -15,6 +15,6 @@ export default function Header() {
       <div>
         <NavTabs />
       </div>
-    </div>
+    </header>
   );
 }

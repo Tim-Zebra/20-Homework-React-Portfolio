@@ -4,3 +4,11 @@
 // Stackoverflow https://stackoverflow.com/users/18346921/tim-zebra
 
 import React from 'react';
+
+export default function Footer() {
+  return (
+    <div>
+      <h1>I'mmm a Foooottteerr</h1>
+    </div>
+  );
+}
