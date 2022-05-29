@@ -1,3 +1,3 @@
 // Header "About Me"
 // Profile Photo
-// Paragraph or so about me
+// Paragraph x2 about me

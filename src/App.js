@@ -1,8 +1,8 @@
 import React from 'react';
-import Thermostat from './components/Thermostat';
+import Home from './components/Thermostat';
 
 function App() {
-  return <Thermostat />;
+  return <Home />;
 }
 
 export default App;
