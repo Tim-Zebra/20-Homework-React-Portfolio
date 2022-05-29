@@ -30,6 +30,7 @@ A front-end show case displaying Tim Zalewski's portfolio using React  <br /> <b
 ## References:
 * 
 * 
+
 ## Development Process:
 1. Created base files
 2. Added pseudocode and pseudofiles based on acceptance criteria
