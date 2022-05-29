@@ -28,7 +28,7 @@ A front-end show case displaying Tim Zalewski's portfolio using React  <br /> <b
 
 
 ## References:
-* 
+* Starter code inspired by UTA bootcamp course #20 React
 * 
 
 ## Development Process:
