@@ -1,7 +1,7 @@
-# 
+# Portfolio - React
 
 ## Description
-describe <br /> <br />
+A front-end show case displaying Tim Zalewski's portfolio using React  <br /> <br />
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
  ## Table of Contents:
