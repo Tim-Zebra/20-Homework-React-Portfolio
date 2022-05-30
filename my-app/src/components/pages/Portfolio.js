@@ -7,11 +7,12 @@
 // Need 6 apps
 
 import React from 'react';
-
+import Project from './portfolio.Project'
 export default function Portfolio() {
   return (
     <div>
       <h1>Portfolio</h1>
+      <Project />
     </div>
   );
 }
