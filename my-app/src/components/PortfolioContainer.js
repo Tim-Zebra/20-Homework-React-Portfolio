@@ -1,37 +1,44 @@
-import React, {useEffect, useState} from 'react';
-import { exportCurrentPage } from './header/NavTabs';
+import React, {useState} from 'react';
+import NavTabs from './navigation/NavTabs';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
+import Header from './Header';
+import Footer from './Footer';
 
 export default function PortfolioContainer() {
-  // const [currentPage, setCurrentPage] = useState(exportCurrentPage);
-  let currentPage = exportCurrentPage;
-  // useEffect(() => setCurrentPage(exportCurrentPage), []);
+  const [currentPage, setCurrentPage] = useState('About');
 
   // Displays current page
   const renderPage = () => {
     if (currentPage === 'About') {
-      console.log('About Triggered happened');
       return <About />;
     }
     if (currentPage === 'Portfolio') {
-      console.log('Portfolio Triggered happened');
       return <Portfolio />;
     }
     if (currentPage === 'Contact') {
-      console.log('Contact Triggered happened');
       return <Contact />;
     }
-    console.log('Resume Triggered happened');
     return <Resume />;
   };
 
+  const handlePageChange = (page) => setCurrentPage(page);
+
   return (
-      <main>
-        {renderPage()}
-      </main>
+      <div>
+        <header>
+          <Header />
+          <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+        </header>
+        <section>
+          {renderPage()}
+        </section>
+        <footer>
+          <Footer />
+        </footer>
+      </div>
   );
 }
 
