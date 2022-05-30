@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { PortfolioContainer } from '../PortfolioContainer';
 
 // Allows for currentPage to be exported to portfolio
-let exportCurrentPage = 'Contact';
+let exportCurrentPage = 'About';
 
 // Navbar that highlights which link is active
 function NavTabs() {
@@ -59,6 +59,6 @@ function NavTabs() {
   );
 }
 
-console.log('ExportCurrentpage happened', exportCurrentPage);
+
 export default NavTabs;
 export {exportCurrentPage};
