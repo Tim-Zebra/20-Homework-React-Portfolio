@@ -46,7 +46,12 @@ export default function Portfolio() {
   return (
     <div>
       <h1>Portfolio</h1>
-      <Project />
+      <Project currentProject={projectObj.project1}/>
+      <Project currentProject={projectObj.project2}/>
+      <Project currentProject={projectObj.project3}/>
+      <Project currentProject={projectObj.project4}/>
+      <Project currentProject={projectObj.project5}/>
+      <Project currentProject={projectObj.project6}/>
     </div>
   );
 }
