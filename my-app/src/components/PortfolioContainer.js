@@ -9,6 +9,7 @@ import Footer from './Footer';
 
 // CSS imports
 import '../styles/bootstrap.min.css'
+import '../styles/PortContainer.css';
 import '../styles/Header.css';
 import '../styles/Section.css';
 import '../styles/Footer.css';
@@ -33,7 +34,7 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-      <div>
+      <div className="portContainer">
         <header>
           <Header />
           <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />

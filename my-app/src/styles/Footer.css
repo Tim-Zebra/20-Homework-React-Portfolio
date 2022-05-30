@@ -1,9 +1,9 @@
 footer {
   position: absolute;
-  bottom: 0;
   text-align: center;
   width: 100%;
   margin: 20px;
+  bottom: 0;
 }
 
 footer div a {
@@ -11,4 +11,17 @@ footer div a {
   margin-right: 20px;
   border: 5px black solid;
   padding: 5px;
+  height: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    position: relative;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  footer {
+    position: relative;
+  }
 }
