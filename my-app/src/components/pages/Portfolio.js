@@ -1,6 +1,9 @@
 // Header "Portfolio"
 // Images for each project wanting to display
+import React from 'react';
+import Project from './portfolio/Project'
 
+// Object of all projects
 const projectObj = {
   project1: {
     title: 'Regex Tutorial',  
@@ -40,8 +43,7 @@ const projectObj = {
   },
 }
 
-import React from 'react';
-import Project from './portfolio/Project'
+// Specified project values are passed to the Project component
 export default function Portfolio() {
   return (
     <div>

@@ -6,8 +6,6 @@
 // Need 6 apps
 import React from 'react';
 
-
-
 export default function Project({projectObj}) {
   return (
     <div className='projectDiv'>
