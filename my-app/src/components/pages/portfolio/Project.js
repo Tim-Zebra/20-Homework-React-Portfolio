@@ -8,40 +8,41 @@ import React from 'react';
 
 const projectObj = {
   project1: {
-    title: 'Social Network',  
-    link: 'https://github.com/Tim-Zebra/Social-Network',
-    prgms: 'NoSQL: MongoDB, Mongoose',
-    image:
-  },
-  project2: {
     title: 'Regex Tutorial',  
     link: 'https://gist.github.com/Tim-Zebra/3670f5235b2fcdd5dbf85251d1f9db89',
     prgms: 'Gist, Regex',
     image:
+  },  
+  project2: {
+    title: 'Tech Blog',  
+    link: 'https://github.com/Tim-Zebra/Tech-Blog',
+    prgms: 'MVC, express, JawsDB',
+    image:
   },
   project3: {
+    title: 'Social Network',  
+    link: 'https://github.com/Tim-Zebra/Social-Network',
+    prgms: 'NoSQL: MongoDB, Mongoose',
+    image:
+  },
+  project4: {
     title: 'e-Commerce Data Server',  
     link: 'https://github.com/Tim-Zebra/eCommerce-Data-Server',
     prgms: 'SQL, Sequelize'
   },
-  project4: {
-    title: 'Social Network',  
-    link: 'https://github.com/Tim-Zebra/Social-Network',
-    prgms: 'NoSQL: MongoDB, Mongoose',
-    image:
-  },
   project5: {
-    title: 'Social Network',  
-    link: 'https://github.com/Tim-Zebra/Social-Network',
-    prgms: 'NoSQL: MongoDB, Mongoose',
+    title: 'Team Builder',  
+    link: 'https://github.com/Tim-Zebra/Team-Builder',
+    prgms: 'Node, Jest',
     image:
   },
-  project6: {
-    title: 'Social Network',  
-    link: 'https://github.com/Tim-Zebra/Social-Network',
-    prgms: 'NoSQL: MongoDB, Mongoose',
+    project6: {
+    title: 'Love/Compatability Finder',  
+    link: 'https://tim-zebra.github.io/Compatible-or-Not_Find-true-love-here./',
+    prgms: 'APIs, HTML, CSS, JS, Collaboration',
     image:
   },
+
 }
 
 export default function Project() {
