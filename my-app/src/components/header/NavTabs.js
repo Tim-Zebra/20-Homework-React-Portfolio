@@ -10,11 +10,11 @@ function NavTabs() {
   const [currentPage, setCurrentPage] = useState(`${exportCurrentPage}`);
 
   // Changes current page value
-  const handlePageChange = (page) => {
-    setCurrentPage(page);
-    exportCurrentPage = page;
-    PortfolioContainer();
-  };
+  // const handlePageChange = (page) => {
+  //   setCurrentPage(page);
+  //   exportCurrentPage = page;
+  //   PortfolioContainer();
+  // };
 
   return (
     <ul className="nav nav-tabs">
