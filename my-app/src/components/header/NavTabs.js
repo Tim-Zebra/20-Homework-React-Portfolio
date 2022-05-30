@@ -1,12 +1,16 @@
 import React, {useState} from 'react';
 
+// Allows for currentPage to be exported to portfolio
+let exportCurrentPage = 'Contact';
+
 // Navbar that highlights which link is active
 function NavTabs() {
-  const [currentPage, setCurrentPage] = useState('About');
 
-  // Displays current page
+  const [currentPage, setCurrentPage] = useState('About');
+  
+  // Changes current page value
   const handlePageChange = (page) => setCurrentPage(page);
-  console.log('This happened', currentPage);
+
   return (
     <ul className="nav nav-tabs">
       <li className="nav-item">
@@ -51,3 +55,4 @@ function NavTabs() {
 }
 
 export default NavTabs;
+export {exportCurrentPage};
