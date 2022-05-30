@@ -1,13 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-// Navbar that denotes which link is active
-function NavTabs({ currentPage, handlePageChange }) {
+// Navbar that highlights which link is active
+function NavTabs() {
+  const [currentPage, setCurrentPage] = useState('About');
+
+  // Displays current page
+  const handlePageChange = (page) => setCurrentPage(page);
+  console.log('This happened', currentPage);
   return (
     <ul className="nav nav-tabs">
       <li className="nav-item">
         <a
           href="#about"
           onClick={() => handlePageChange('About')}
+
           className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
         >
           About
