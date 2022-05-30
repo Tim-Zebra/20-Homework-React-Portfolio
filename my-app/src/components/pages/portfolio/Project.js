@@ -5,7 +5,7 @@
 // Fade image, show Name (link to deployed page), Github Icon (link to git hub), name of programs used (eg. MERN stack )
 // Need 6 apps
 import React from 'react';
-import proekjct from './'
+
 const projectObj = {
   project1: {
     title: 'Regex Tutorial',  
@@ -43,16 +43,12 @@ const projectObj = {
     prgms: 'APIs, HTML, CSS, JS, Collaboration',
     image: './projectImages/compatibility.gif',
   },
-
 }
 
-export default function Project() {
-  
-  
-  
+export default function Project(projectObj) {
   return (
     <div className='projectDiv'>
-      <Project />
+      
     </div>
   );
 }
