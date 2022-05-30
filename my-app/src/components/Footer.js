@@ -7,6 +7,16 @@ import React from 'react';
 
 export default function Footer() {
   return (
-      <h1>I'mmm a Foooottteerr</h1>
+    <div>
+      <a href="google.com">
+        image
+      </a>
+      <a href="google.com">
+          image
+      </a>
+      <a href="google.com">
+        image
+      </a>
+    </div>
   );
 }

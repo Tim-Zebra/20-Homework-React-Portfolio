@@ -1,0 +1,14 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  margin: 20px;
+}
+
+footer div a {
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 5px black solid;
+  padding: 5px;
+}

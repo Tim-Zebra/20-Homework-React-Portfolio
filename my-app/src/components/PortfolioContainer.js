@@ -7,6 +7,12 @@ import Resume from './pages/Resume';
 import Header from './Header';
 import Footer from './Footer';
 
+// CSS imports
+import '../styles/bootstrap.min.css'
+import '../styles/Header.css';
+import '../styles/Section.css';
+import '../styles/Footer.css';
+
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('About');
 
