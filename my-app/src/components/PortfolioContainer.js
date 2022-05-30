@@ -9,7 +9,7 @@ import Footer from './Footer';
 
 // CSS imports
 import '../styles/bootstrap.min.css'
-import '../styles/PortContainer.css';
+import '../styles/PortfolioContainer.css';
 import '../styles/Header.css';
 import '../styles/Section.css';
 import '../styles/Footer.css';

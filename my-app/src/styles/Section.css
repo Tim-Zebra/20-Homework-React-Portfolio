@@ -1,3 +1,12 @@
 section {
   margin: 50px;
 }
+
+.resumeBlock {
+  display:block;
+}
+
+.resumeProficiences {
+  display: flex;
+  justify-content: space-around;
+}

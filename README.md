@@ -29,7 +29,7 @@ A front-end show case displaying Tim Zalewski's portfolio using React  <br /> <b
 
 ## References:
 * Starter code inspired by UTA bootcamp course #20 React
-* 
+* Contact form inspired by Aleksandr Varnin at https://mailtrap.io/blog/react-contact-form/
 
 ## Development Process:
 1. Created base files
