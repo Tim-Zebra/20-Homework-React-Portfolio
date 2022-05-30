@@ -8,7 +8,8 @@ import Resume from './pages/Resume';
 
 export default function PortfolioContainer() {
   let currentPage = exportCurrentPage;
-  console.log('This happened', currentPage);
+  console.log('This happened in portfolio', currentPage);
+
   // Displays current page
   const renderPage = () => {
     if (currentPage === 'About') {
@@ -30,3 +31,5 @@ export default function PortfolioContainer() {
     </main>
   );
 }
+
+export { PortfolioContainer };
