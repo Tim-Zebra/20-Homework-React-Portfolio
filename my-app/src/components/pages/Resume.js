@@ -8,8 +8,8 @@ import pdf from '../../assets/resume.pdf';
 
 export default function Resume() {
   return (
-    <section className="d-flex row portfolioSection">
-      <div className="resumeBlock">
+    <section className="portfolioSection">
+      <div className="d-block mb-5">
         <h1>Resume</h1>
         <div>Download my Resume <a href={pdf} target="_blank" rel="noreferrer">Here</a></div>
       </div>
@@ -36,7 +36,7 @@ export default function Resume() {
               <li>Node</li>
               <li>Express</li>
               <li>mySQL, Sequelize</li>
-              <li>noSQL, MongoDB,Mongoose</li>
+              <li>noSQL, MongoDB, Mongoose</li>
               <li>REST</li>
             </ul>
           </h4>

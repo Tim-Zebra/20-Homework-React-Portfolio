@@ -2,15 +2,7 @@ section {
   margin: 50px;
 }
 
-.resumeBlock {
-  display:block;
-}
-
-.resumeProficiences {
-  display: flex;
-  justify-content: space-around;
-}
-
+/* Section: About */
 #aboutSection {
   margin-bottom: 275px;
 }
@@ -26,3 +18,37 @@ section {
     margin-bottom: 50px;
   }
 }
+
+/* Section: Portfolio and Projects */
+.portfolioSection {
+
+}
+
+#projectSectionTitle {
+}
+
+#projectSection {
+
+}
+
+.projectDiv {
+  width: 200px;
+  height: 300px;
+}
+
+.projectDiv img {
+  width: 100%;
+  height: 100%;
+  border: black solid 2px;
+  border-style:dashed
+}
+
+/* Section: Resume */
+.proficienciesBlock {
+
+}
+
+.resumeProficiences {
+
+}
+
