@@ -4,7 +4,7 @@
 // Stackoverflow https://stackoverflow.com/users/18346921/tim-zebra
 
 import React from 'react';
-
+import '../styles/Footer.css';
 export default function Footer() {
   return (
     <footer>

@@ -6,10 +6,11 @@
 // Need 6 apps
 import React from 'react';
 
-export default function Project({projectObj}) {
+export default function Project({currentProject}) {
+  console.log('This happened', currentProject.image);
   return (
-    <div className='projectDiv'>
-      <h1>Spacing Test</h1>
+    <div className='col-6 my-3 projectDiv'>
+      <img src={currentProject.image} alt="project screen shot"></img>
     </div>
   );
 }
