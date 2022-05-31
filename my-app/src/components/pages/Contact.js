@@ -10,7 +10,7 @@ import React from 'react';
 
 export default function Contact() {
   return (
-    <section class="portfolioSection">
+    <section className="portfolioSection">
       <h1>Contact</h1>
       <div className="App">
         <form id="contact-form">

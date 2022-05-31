@@ -6,7 +6,7 @@ import React from 'react';
 
 export default function About() {
   return (
-    <section class="portfolioSection">
+    <section className="portfolioSection">
       <h1>About Me</h1>
       <p>Hello! My name is Timothy Zalewski and the most exciting thing about me right now is that I made a huge career leap!
           I was previously a pharmacist for 6 years, and have been in the pharmacy field for 9+ years. As a top performer, I 

@@ -8,7 +8,7 @@ import pdf from '../../assets/resume.pdf';
 
 export default function Resume() {
   return (
-    <section class="portfolioSection">
+    <section className="d-flex flex-row portfolioSection">
       <div className="resumeBlock">
         <h1>Resume</h1>
         <div>Download my Resume <a href={pdf} target="_blank" rel="noreferrer">Here</a></div>
