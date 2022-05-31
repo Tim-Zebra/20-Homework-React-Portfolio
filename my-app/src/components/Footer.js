@@ -7,7 +7,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <div>
+    <footer>
       <a href="google.com">
         image
       </a>
@@ -17,6 +17,6 @@ export default function Footer() {
       <a href="google.com">
         image
       </a>
-    </div>
+    </footer>
   );
 }

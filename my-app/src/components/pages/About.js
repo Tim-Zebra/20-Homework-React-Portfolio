@@ -6,7 +6,7 @@ import React from 'react';
 
 export default function About() {
   return (
-    <div>
+    <section class="portfolioSection">
       <h1>About Me</h1>
       <p>Hello! My name is Timothy Zalewski and the most exciting thing about me right now is that I made a huge career leap!
           I was previously a pharmacist for 6 years, and have been in the pharmacy field for 9+ years. As a top performer, I 
@@ -21,6 +21,6 @@ export default function About() {
           and <a href="https://github.com/Tim-Zebra" target="_blank" rel="noopener noreferrer">GitHub</a> profiles to see where I started, 
           who I am, and how far I have come in such a short amount of time.   
       </p>
-    </div>
+    </section>
   );
 }

@@ -18,7 +18,7 @@ export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('About');
 
   // Displays current page
-  const renderPage = () => {
+  const renderSectionPage = () => {
     if (currentPage === 'About') {
       return <About />;
     }
@@ -39,12 +39,8 @@ export default function PortfolioContainer() {
           <Header />
           <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
         </header>
-        <section>
-          {renderPage()}
-        </section>
-        <footer>
-          <Footer />
-        </footer>
+        {renderSectionPage()}
+        <Footer />
       </div>
   );
 }

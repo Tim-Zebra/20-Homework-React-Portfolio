@@ -10,7 +10,7 @@ import React from 'react';
 
 export default function Contact() {
   return (
-    <div>
+    <section class="portfolioSection">
       <h1>Contact</h1>
       <div className="App">
         <form id="contact-form">
@@ -29,6 +29,6 @@ export default function Contact() {
           <button type="submit" className="btn btn-primary">Submit</button>
         </form>
       </div>
-    </div>
+    </section>
   );
 }

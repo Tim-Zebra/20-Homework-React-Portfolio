@@ -8,7 +8,7 @@ import pdf from '../../assets/resume.pdf';
 
 export default function Resume() {
   return (
-    <div>
+    <section class="portfolioSection">
       <div className="resumeBlock">
         <h1>Resume</h1>
         <div>Download my Resume <a href={pdf} target="_blank" rel="noreferrer">Here</a></div>
@@ -42,7 +42,6 @@ export default function Resume() {
           </h4>
         </div>
       </div>
-
-    </div>
+    </section>
   );
 }
