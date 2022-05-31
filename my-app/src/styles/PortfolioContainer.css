@@ -1,8 +1,28 @@
-.projectDiv {
-  border: 3px black solid;
+#portfolioSection {
+  display:block;
+  width: 100%;
 }
 
 #projectSection {
   display:flex;
   flex:wrap;
+  margin: 20px;
 }
+
+#projectSectionTitle {
+  display:block;
+  width: 100%;
+}
+
+.projectDiv {
+  border: 3px black solid;
+  margin: 20px;
+  width: 200px;
+}
+
+
+
+
+
+
+

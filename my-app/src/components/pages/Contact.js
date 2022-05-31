@@ -6,8 +6,6 @@
 // Submit (Validate, all fields must be filled in. Validate Email.)
 // If validation fails, show short message why above submit button
 // Contact form inspired by Aleksandr Varnin https://mailtrap.io/blog/react-contact-form/
-
-
 import React from 'react';
 
 export default function Contact() {

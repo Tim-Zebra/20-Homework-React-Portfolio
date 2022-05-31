@@ -46,8 +46,8 @@ const projectObj = {
 // Specified project values are passed to the Project component
 export default function Portfolio() {
   return (
-    <div>
-      <h1>Portfolio</h1>
+    <div id="portfolioSection">
+      <h1 id="projectSectionTitle">Portfolio</h1>
       <div id="projectSection">
         <Project currentProject={projectObj.project1}/>
         <Project currentProject={projectObj.project2}/>
