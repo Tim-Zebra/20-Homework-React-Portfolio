@@ -44,6 +44,10 @@ section {
 }
 
 /* Section: Resume */
+#resumeBlock {
+  margin-bottom: 150px;
+}
+
 .proficienciesBlock {
 
 }
@@ -52,3 +56,14 @@ section {
 
 }
 
+@media only screen and (max-width: 600px) {
+  #resumeBlock {
+    margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  #resumeBlock {
+    margin-bottom: 50px;
+  }
+}
