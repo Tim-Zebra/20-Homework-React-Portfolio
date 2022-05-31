@@ -1,0 +1,8 @@
+.projectDiv {
+  border: 3px black solid;
+}
+
+#projectSection {
+  display:flex;
+  flex:wrap;
+}
