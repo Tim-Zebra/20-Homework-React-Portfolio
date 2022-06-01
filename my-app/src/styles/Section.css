@@ -4,7 +4,31 @@ section {
 
 /* Section: About */
 #aboutSection {
-  margin-bottom: 275px;
+  margin-bottom: 100px;
+}
+
+#aboutAside {
+
+}
+
+#aboutHeading {
+  position:fixed;
+  left: 100px;
+  top: 200px;
+}
+
+#aboutHeader {
+
+}
+
+#aboutProfileImage {
+  width: 400px;
+  height: 300px;
+}
+
+#aboutParagraphs p {
+  width: 600px;
+  font-size: larger;
 }
 
 @media only screen and (max-width: 600px) {
