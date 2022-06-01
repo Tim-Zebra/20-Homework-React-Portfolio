@@ -146,9 +146,11 @@ filter:hue-rotate(90deg);
 
 /* Contact: Section */
 #contactSection {
-	background: linear-gradient(-45deg, #efc1b3, #f5a5c4, #82b7ca, #23d5ab);
+	background: linear-gradient(-45deg, #1760111e, #ffffff40, #389ec45b, #23d53e2f);
   background-size: 200%;
-	animation: gradient 10s ease infinite;
+	animation: gradient 15s ease infinite;
+  border-radius: 10%;
+  width: 60%;
 }
 
 @keyframes gradient {
@@ -164,7 +166,7 @@ filter:hue-rotate(90deg);
 }
 
 #contact-form {
-  width: 60%;
+  width: 90%;
 }
 
 /* Section: Resume */
