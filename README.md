@@ -30,6 +30,9 @@ A front-end show case displaying Tim Zalewski's portfolio using React  <br /> <b
 ## References:
 * Starter code inspired by UTA bootcamp course #20 React
 * Contact form inspired by Aleksandr Varnin at https://mailtrap.io/blog/react-contact-form/
+* Github icon inspired by https://www.flaticon.com/free-icon/github-logo_25231
+* LinkedIn icon inspired by https://flyclipart.com/linkedin-ui-flat-set-of-icons-icons-for-free-linkedin-icon-png-930862
+* StackOverFlow icon inspired by https://commons.wikimedia.org/wiki/File:Stack_Overflow_icon.svg
 
 ## Development Process:
 1. Created base files
