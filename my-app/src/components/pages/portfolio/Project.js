@@ -10,7 +10,8 @@ export default function Project({currentProject}) {
   console.log('This happened', currentProject.image);
   return (
     <div className='col-6 my-3 projectDiv'>
-      <img src={currentProject.image} alt="project screen shot"></img>
+      <img src={currentProject.image} alt="project screen shot" className="projectBackground"></img>
+      <a href={currentProject.link} className="linkProjectProgramsUsed hide"><div className="projectProgramsUsed">{currentProject.prgms}</div></a>
     </div>
   );
 }
