@@ -13,6 +13,10 @@ footer a {
   height: 50px;
 }
 
+.footerIcon {
+  
+}
+
 @media only screen and (max-width: 600px) {
   footer {
     position: relative;
