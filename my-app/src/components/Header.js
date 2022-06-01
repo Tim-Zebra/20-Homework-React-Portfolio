@@ -6,7 +6,7 @@ import React from 'react';
 
 export default function Header() {
   return (
-    <div>
+    <div id="headerTextContent">
       <h1 className='text-center'>
         Tim Zalewski, Pharm.D.
       </h1>

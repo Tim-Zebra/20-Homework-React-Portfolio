@@ -33,6 +33,7 @@ A front-end show case displaying Tim Zalewski's portfolio using React  <br /> <b
 * Github icon inspired by https://www.flaticon.com/free-icon/github-logo_25231
 * LinkedIn icon inspired by https://flyclipart.com/linkedin-ui-flat-set-of-icons-icons-for-free-linkedin-icon-png-930862
 * StackOverFlow icon inspired by https://commons.wikimedia.org/wiki/File:Stack_Overflow_icon.svg
+* Header gif inspired by Bruce Peacecraft at https://www.pinterest.com/pin/509188301610937530/
 
 ## Development Process:
 1. Created base files
