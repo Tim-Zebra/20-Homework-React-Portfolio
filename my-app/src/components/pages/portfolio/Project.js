@@ -5,6 +5,7 @@
 // Fade image, show Name (link to deployed page), Github Icon (link to git hub), name of programs used (eg. MERN stack )
 // Need 6 apps
 import React, {useState} from 'react';
+import IconCreator from '../../../utils/IconCreator'
 
 export default function Project({currentProject}) {
 // Mouse enter effects
@@ -19,7 +20,7 @@ export default function Project({currentProject}) {
         <div className="projectProgramsUsed text-center">{currentProject.prgms}</div>
       }
       {isShown && currentProject.deployed !== false &&
-        <div className="text-center">{currentProject.prgms}</div>
+        <a href={currentProject.deployed} target="_blank" rel="noreferrer" className="projectDeployedAt text-center">Deployed @</a>
       }
     </div>
   );
