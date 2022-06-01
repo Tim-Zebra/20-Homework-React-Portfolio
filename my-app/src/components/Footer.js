@@ -1,7 +1,3 @@
-// At the bottom 3 icons that fade when moused over
-// Github icon (Just like for Portfolio)
-// LinkedIn icon
-// Stackoverflow https://stackoverflow.com/users/18346921/tim-zebra
 import React from 'react';
 import IconCreator from '../utils/IconCreator'
 import '../styles/Footer.css';
@@ -23,7 +19,6 @@ const iconLinkObj = {
 }
 
 export default function Footer() {
-  
   return (
     <footer>
       <IconCreator activeIconObj={iconLinkObj.github} />

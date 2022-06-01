@@ -9,8 +9,8 @@ export default function About() {
     <section id="aboutSection" className="d-flex column justify-content-between portfolioSection">
       <aside className="col-4">
         <div id="aboutHeading" className="col-4">
-          <h1 id="aboutHeader" class="text-center mr-5">About Me</h1>
-          <img src="images/profile-photo.png" class="img-fluid "id="aboutProfileImage"></img>
+          <h1 id="aboutHeader" className="text-center mr-5">About Me</h1>
+          <img src="images/profile-photo.png" className="img-fluid "id="aboutProfileImage" alt="developer"></img>
         </div>
       </aside>
       <div id="aboutParagraphs" className='d-flex row col-8 justify-content-center'>
