@@ -80,12 +80,14 @@ section {
   position: absolute;
   top: 40px;
   left: 50px;
-  font-size: 40px;
+  font-size: 30px;
   width: 300px;
   padding: 10px;
   cursor:default;
-  background-color: aliceblue;
-  border-radius: 50px;
+  background-color: rgb(34, 103, 163);
+  border: black 2px solid;
+  color: white;
+  font-style: italic;
 }
 
 .projectDeployedAt {
