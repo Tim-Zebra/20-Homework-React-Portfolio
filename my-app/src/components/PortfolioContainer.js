@@ -44,5 +44,3 @@ export default function PortfolioContainer() {
       </div>
   );
 }
-
-export {PortfolioContainer}

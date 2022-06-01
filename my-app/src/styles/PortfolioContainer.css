@@ -4,5 +4,8 @@
 
 /* util: Active Icon */
 .activeIcon:hover {
-  color:grey;
+  filter:hue-rotate(90deg); 
+  opacity: 0.5;
+  transform: rotate(90deg);
+  transition: 0.5s;
 }

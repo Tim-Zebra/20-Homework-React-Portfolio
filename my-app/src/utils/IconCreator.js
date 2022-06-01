@@ -3,7 +3,7 @@ import React from 'react';
 export default function activeIcon({activeIconObj}) {
   return (
     <div className="activeIcon d-inline">
-      <a href={activeIconObj.link}>
+      <a href={activeIconObj.link} target="_blank" rel="noreferrer">
         <img src={activeIconObj.image} alt="external link"></img>
       </a>
     </div>
