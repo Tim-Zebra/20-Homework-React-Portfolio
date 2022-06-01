@@ -6,8 +6,13 @@ import React from 'react';
 
 export default function Header() {
   return (
-    <h1>
-      Tim Zalewski, Pharm.D.
-    </h1>
+    <div>
+      <h1 className='text-center'>
+        Tim Zalewski, Pharm.D.
+      </h1>
+      <h2 className='text-center'>
+        Full-Stack Developer
+      </h2>
+    </div>
   );
 }
