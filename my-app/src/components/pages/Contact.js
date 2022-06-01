@@ -9,10 +9,19 @@
 import React from 'react';
 
 export default function Contact() {
+// Validate email is entered correctly
+  const validateEmail = (email) => {
+
+  }
+
+  const validateName = (name) => {
+
+  }
+
   return (
-    <section className="portfolioSection">
-      <h1>Contact</h1>
-      <div className="App">
+    <section className="portfolioSection" id="contactSection">
+      <h1 className='text-center'>Contact Me @</h1>
+      <div className="d-flex justify-content-center App">
         <form id="contact-form">
           <div className="form-group">
             <label htmlFor="name">Name</label>

@@ -144,6 +144,29 @@ filter:hue-rotate(90deg);
   display: none;
 } */
 
+/* Contact: Section */
+#contactSection {
+	background: linear-gradient(-45deg, #efc1b3, #f5a5c4, #82b7ca, #23d5ab);
+  background-size: 200%;
+	animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#contact-form {
+  width: 60%;
+}
+
 /* Section: Resume */
 #resumeBlock {
   margin-bottom: 150px;
