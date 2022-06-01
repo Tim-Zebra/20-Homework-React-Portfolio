@@ -59,9 +59,10 @@ section {
   width: 200px;
   height: 300px;
   position: relative;
+  transition: 0.5s;
 }
 
-.projectDiv img {
+.projectDiv > img {
   width: 100%;
   height: 100%;
   border: black solid 2px;
@@ -103,6 +104,33 @@ section {
 transition: 0.5s;
 text-decoration: none;
 filter:hue-rotate(90deg);
+}
+
+.projectGithubLink {
+  position: absolute;
+  top: 40px;
+  right: 80px;
+  padding: 5px;
+  height: 100px;
+  width: 150px;
+}
+
+
+
+.projectGithubLink > div > a > img {
+  position: relative;
+  left: -20px;
+  top: -20px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50px;
+}
+
+.projectGithubLink:hover > div > a > img {
+  transition: 0.5s;
+  filter:invert(50);
+  background-color: coral;
+  border-radius: 20px;
 }
 
 /* reveal and hide features */

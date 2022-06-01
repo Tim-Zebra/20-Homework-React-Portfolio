@@ -6,6 +6,10 @@
 .activeIcon:hover {
   filter:hue-rotate(90deg); 
   opacity: 0.5;
-  transform: rotate(90deg);
   transition: 0.5s;
+}
+
+.activeIconImage {
+  width: 75px;
+  height: 75px;
 }
