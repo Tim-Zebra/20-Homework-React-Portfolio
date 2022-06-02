@@ -68,8 +68,10 @@ export default function Contact() {
           <div className="form-group"
             onMouseEnter={() => setIsShown(true)}
             onMouseLeave={() => setIsShown(false)}>
-            <label htmlFor="name">Name
-            <span></span>
+            <label htmlFor="name"
+            value={usernameInput}
+            >Name
+              <span></span>
             </label>
             <input type="text" className="form-control">
 
@@ -79,15 +81,18 @@ export default function Contact() {
             onMouseEnter={() => setIsShown(true)}
             onMouseLeave={() => setIsShown(false)}>
             <label htmlFor="exampleInputEmail1">Email address</label>
-            <input type="text" className="form-control">
-
+            <input type="text" className="form-control"
+            value={emailInput}
+            >
             </input>
           </div>
           <div className="form-group"
             onMouseEnter={() => setIsShown(true)}
             onMouseLeave={() => setIsShown(false)}>
             <label htmlFor="message">Message</label>
-            <textarea className="form-control" rows="5">
+            <textarea className="form-control" rows="5"
+            value={messageInput}
+            >
             
             </textarea>
           </div>
