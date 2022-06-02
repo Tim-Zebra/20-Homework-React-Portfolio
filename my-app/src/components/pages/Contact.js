@@ -51,6 +51,7 @@ export default function Contact() {
   }
 
   const validate = (event) => {
+    event.preventDefault();
     // Resets fields if valid info
     if(usernameInput && emailInput && messageInput && !isUsernameAlertShown && !isEmailAlertShown && !isMessageAlertShown && isEmailValid) {
         setUsernameInput('');
