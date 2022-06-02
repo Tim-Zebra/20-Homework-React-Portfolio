@@ -14,8 +14,7 @@ A front-end show case displaying Tim Zalewski's portfolio using React  <br /> <b
   **[Author](#author)** <br />
 
 ## How to Use:
-* 
-* 
+* Use the links to naviagate through the pages, and enjoy yourself!
 
 ## Application Demos:
 <h2 align="center">Title</h2>
@@ -28,20 +27,26 @@ A front-end show case displaying Tim Zalewski's portfolio using React  <br /> <b
 
 
 ## References:
-* Starter code inspired by UTA bootcamp course #20 React
-* Contact form inspired by Aleksandr Varnin at https://mailtrap.io/blog/react-contact-form/
-* Github icon inspired by https://www.flaticon.com/free-icon/github-logo_25231
-* LinkedIn icon inspired by https://flyclipart.com/linkedin-ui-flat-set-of-icons-icons-for-free-linkedin-icon-png-930862
-* StackOverFlow icon inspired by https://commons.wikimedia.org/wiki/File:Stack_Overflow_icon.svg
-* Header gif inspired by Bruce Peacecraft at https://www.pinterest.com/pin/509188301610937530/
-* Background gradient inspired by Manuel Pinto at https://codepen.io/P1N2O/pen/pyBNzX
-* Regex email validate inspired by Rahul Bansal at https://www.tutorialspoint.com/regex-in-reactjs
+* Starter code inspired by UTA bootcamp course #20 React <br />
+* Contact form inspired by Aleksandr Varnin at https://mailtrap.io/blog/react-contact-form/ <br />
+* Github icon inspired by https://www.flaticon.com/free-icon/github-logo_25231 <br />
+* LinkedIn icon inspired by https://flyclipart.com/linkedin-ui-flat-set-of-icons-icons-for-free-linkedin-icon-png-930862 <br />
+* StackOverFlow icon inspired by https://commons.wikimedia.org/wiki/File:Stack_Overflow_icon.svg <br />
+* Header gif inspired by Bruce Peacecraft at https://www.pinterest.com/pin/509188301610937530/ <br />
+* Background gradient inspired by Manuel Pinto at https://codepen.io/P1N2O/pen/pyBNzX <br />
+* Regex email validate inspired by Rahul Bansal at https://www.tutorialspoint.com/regex-in-reactjs <br />
 
 
 ## Development Process:
-1. Created base files
-2. Added pseudocode and pseudofiles based on acceptance criteria
-3. Outlined task completion order
+1. Created base files <br />
+2. Added pseudocode and pseudofiles based on acceptance criteria <br />
+3. Outlined task completion order <br />
+4. Compeleted loading/functional components <br />
+5. Created space holders with basic CSS for header/footer/section <br />
+6. Slowly added functionality throughout <br />
+7. Finalized content <br />
+8. Finalized layout <br />
+9. Finalized animations/css <br />
 3. See commits for more details
 
 ## Author:
