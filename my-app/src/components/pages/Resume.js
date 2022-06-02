@@ -14,7 +14,7 @@ export default function Resume() {
         <div>Download my Resume <a href={pdf} target="_blank" rel="noreferrer">Here</a></div>
       </div>
       <div id="resumeBlock" className="d-flex row col-12 ml-4 justify-content-around">
-        <div className="col-5 align-center resumeProficiences">
+        <div id="frontendProficiences" className="col-5 align-center resumeProficiences">
           <h4>
             Front-End Proficiences
             <ul>
@@ -28,7 +28,7 @@ export default function Resume() {
             </ul>
           </h4>
         </div>
-        <div className="col-5 align-center resumeProficiences">
+        <div id="backendProficiences" className="col-5 align-center resumeProficiences">
           <h4>
             Back-End Proficiences
             <ul>
