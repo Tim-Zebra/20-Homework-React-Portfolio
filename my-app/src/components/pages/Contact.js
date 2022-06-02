@@ -19,6 +19,9 @@ export default function Contact() {
   const [ isUserName, setIsUsername ] = useState(false);
   const [ isMessage, setIsMessage ] = useState(false);
 
+  // Handle Mouse Over
+
+  // Handle form submit
   // Makes sure username is entered
   const validateUsername = (user) => {
 
