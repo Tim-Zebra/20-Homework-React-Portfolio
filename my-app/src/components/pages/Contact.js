@@ -62,7 +62,7 @@ export default function Contact() {
   const validate = () => {
 
     // Resets fields if valid info
-    if(isUsername && isEmail && isMessage) {
+    if(isUsername && isEmail && isMessage && !isUsernameAlertShown && !isEmailAlertShown && !isMessageAlertShown) {
       setUsernameInput('');
       setEmailInput('');
       setMessageInput('');
@@ -74,6 +74,8 @@ export default function Contact() {
       setIsMessageAlertShown(false);
       return;
     }
+    if(!isUsername)
+
   }
 
   return (
