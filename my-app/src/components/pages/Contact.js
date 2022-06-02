@@ -55,7 +55,7 @@ export default function Contact() {
   }
 
   // Makes sure content is entered
-  const validateContent = (content) => {
+  const validateContent = () => {
 
   }
 
