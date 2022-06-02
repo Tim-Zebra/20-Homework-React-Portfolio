@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio/static/css/main.2ecdc1dc.css",
+    "main.js": "/React-Portfolio/static/js/main.a1a1cea6.js",
+    "static/media/resume.pdf": "/React-Portfolio/static/media/resume.0686366fbe142a584915.pdf",
+    "static/media/headerCode.gif": "/React-Portfolio/static/media/headerCode.27c7670803406dcf35a3.gif",
+    "index.html": "/React-Portfolio/index.html",
+    "main.2ecdc1dc.css.map": "/React-Portfolio/static/css/main.2ecdc1dc.css.map",
+    "main.a1a1cea6.js.map": "/React-Portfolio/static/js/main.a1a1cea6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2ecdc1dc.css",
+    "static/js/main.a1a1cea6.js"
+  ]
+}
