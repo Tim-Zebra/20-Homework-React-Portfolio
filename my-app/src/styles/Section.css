@@ -176,9 +176,20 @@ filter:hue-rotate(90deg);
   margin-bottom: 100px;
 }
 
-.proficienciesBlock {
-
+.resumeProficiences:hover {
+  cursor: default;
 }
+
+.resumeProficiences:hover > h1 {
+  cursor: default;
+  font-size: 5px;
+}
+
+.resumeProficiences:hover > ul {
+  cursor: default;
+  font-size: 5px;
+}
+
 
 .resumeProficiences {
   margin-left: 100px;
