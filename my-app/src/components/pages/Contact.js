@@ -6,17 +6,31 @@
 // Submit (Validate, all fields must be filled in. Validate Email.)
 // If validation fails, show short message why above submit button
 // Contact form inspired by Aleksandr Varnin https://mailtrap.io/blog/react-contact-form/
-import React from 'react';
+import React, {useState} from 'react';
 
 export default function Contact() {
-// Validate email is entered correctly
-  const validateEmail = (email) => {
+// Allows for active changing of variables
+const [ isEmail, setIsEmail ] = useState(false);
+const [ isUserName, setIsUsername ] = useState(false);
+const [ isMessage, setIsMessage ] = useState(false);
+
+// Makes sure email is in the proper format
+const validateEmail = (email) => {
+    const validEmail = new RegExp(
+      '^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]$'
+   );
+  }
+
+  // Makes sure email is entered
+  const validateUsername = (user) => {
 
   }
 
-  const validateName = (name) => {
+  const validateUsername = (name) => {
 
   }
+
+
 
   return (
     <section className="portfolioSection p-5 mx-auto" id="contactSection">
@@ -35,7 +49,7 @@ export default function Contact() {
             <label htmlFor="message">Message</label>
             <textarea className="form-control" rows="5" />
           </div>
-          <button type="submit" className="btn">Submit</button>
+          <button type="submit" className="btn" onClick={validate}>Submit</button>
         </form>
       </div>
     </section>

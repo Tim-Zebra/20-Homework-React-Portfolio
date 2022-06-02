@@ -35,6 +35,8 @@ A front-end show case displaying Tim Zalewski's portfolio using React  <br /> <b
 * StackOverFlow icon inspired by https://commons.wikimedia.org/wiki/File:Stack_Overflow_icon.svg
 * Header gif inspired by Bruce Peacecraft at https://www.pinterest.com/pin/509188301610937530/
 * Background gradient inspired by Manuel Pinto at https://codepen.io/P1N2O/pen/pyBNzX
+* Regex email validate inspired by Rahul Bansal at https://www.tutorialspoint.com/regex-in-reactjs
+
 
 ## Development Process:
 1. Created base files
