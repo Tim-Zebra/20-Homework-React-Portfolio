@@ -28,7 +28,7 @@ A front-end show case displaying Tim Zalewski's portfolio using React  <br /> <b
 <p align="center"><font size="4"><a href="https://drive.google.com/file/d/1mLjXeAkKqRFDjM1MrK35keyXzzyR6wAf/view">Video Demo</a></font></p>
 
 ## Link to Deployed Page:
-
+https://tim-zebra.github.io/React-Portfolio/
 
 ## References:
 * Starter code inspired by UTA bootcamp course #20 React <br />
