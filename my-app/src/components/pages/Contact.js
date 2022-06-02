@@ -9,28 +9,47 @@
 import React, {useState} from 'react';
 
 export default function Contact() {
-// Allows for active changing of variables
-const [ isEmail, setIsEmail ] = useState(false);
-const [ isUserName, setIsUsername ] = useState(false);
-const [ isMessage, setIsMessage ] = useState(false);
+  // Creates a style for an alert message
+  const alertStyle = {
 
-// Makes sure email is in the proper format
-const validateEmail = (email) => {
-    const validEmail = new RegExp(
-      '^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]$'
-   );
   }
 
-  // Makes sure email is entered
+  // Allows for active changing of variables
+  const [ isEmail, setIsEmail ] = useState(false);
+  const [ isUserName, setIsUsername ] = useState(false);
+  const [ isMessage, setIsMessage ] = useState(false);
+
+  // Makes sure username is entered
   const validateUsername = (user) => {
 
   }
+  // Makes sure email is in the proper format
+  const validateEmail = (email) => {
+    // Regex to confirm email format
+    const validEmail = new RegExp(
+      '^[a-zA-Z0-9._:$!%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]$'
+    );
 
+    // confirms match
+
+  }
+
+  // Makes sure message is entered
   const validateUsername = (name) => {
 
   }
 
+  const validate = () => {
 
+
+    // Resets fields if valid info
+    if(isUsername && isEmail && isMessage) {
+      setIsUsername(false);
+      isEmail(false);
+      isMessage(false);
+    }
+    return 
+  }
 
   return (
     <section className="portfolioSection p-5 mx-auto" id="contactSection">
