@@ -20,6 +20,10 @@ export default function Contact() {
   const [ isMessage, setIsMessage ] = useState(false);
 
   // Handle Mouse Over
+  const handleMouseOver = () => {
+    const alert = " Please fill in the below form field!"
+
+  }
 
   // Handle form submit
   // Makes sure username is entered
@@ -58,18 +62,32 @@ export default function Contact() {
     <section className="portfolioSection p-5 mx-auto" id="contactSection">
       <h1 className='text-center'>Contact Me @</h1>
       <div className="d-flex justify-content-center App">
-        <form id="contact-form">
-          <div className="form-group">
-            <label htmlFor="name">Name</label>
-            <input type="text" className="form-control" />
+        <form id="contact-form" >
+          <div className="form-group"
+            onMouseEnter={() => setIsShown(true)}
+            onMouseLeave={() => setIsShown(false)}>
+            <label htmlFor="name">Name
+            {if <span></span>
+            </label>
+            <input type="text" className="form-control">
+
+            </input>
           </div>
-          <div className="form-group">
+          <div className="form-group"
+          onMouseEnter={() => setIsShown(true)}
+          onMouseLeave={() => setIsShown(false)}>
             <label htmlFor="exampleInputEmail1">Email address</label>
-            <input type="email" className="form-control" />
+            <input type="text" className="form-control">
+
+            </input>
           </div>
-          <div className="form-group">
+          <div className="form-group"
+          onMouseEnter={() => setIsShown(true)}
+          onMouseLeave={() => setIsShown(false)}>
             <label htmlFor="message">Message</label>
-            <textarea className="form-control" rows="5" />
+            <textarea className="form-control" rows="5">
+            
+            </textarea>
           </div>
           <button type="submit" className="btn" onClick={validate}>Submit</button>
         </form>
