@@ -173,7 +173,7 @@ filter:hue-rotate(90deg);
 
 /* Section: Resume */
 #resumeBlock {
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 .proficienciesBlock {
@@ -181,5 +181,5 @@ filter:hue-rotate(90deg);
 }
 
 .resumeProficiences {
-  margin-left: 80px;
+  margin-left: 100px;
 }
