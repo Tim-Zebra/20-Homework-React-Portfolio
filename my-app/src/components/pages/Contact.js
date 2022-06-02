@@ -11,25 +11,27 @@ import React, {useState} from 'react';
 export default function Contact() {
   // Creates a style for an alert message
   const alertStyle = {
-
+    color: 'red',
+    textDecorationLine: 'underline',
+    display: 'block',
   }
 
   // Variables for validating content
   const [ isEmail, setIsEmail ] = useState(false);
-  const [ isUserName, setIsUsername ] = useState(false);
+  const [ isUsername, setIsUsername ] = useState(false);
   const [ isMessage, setIsMessage ] = useState(false);
 
   // Variables for input content present
-  const [ emailInput, setemailInput ] = useState('');
-  const [ usernameInput, setusernameInput ] = useState('');
-  const [ messageInput, setmessageInput ] = useState('');
-
-  const 
+  const [ emailInput, setEmailInput ] = useState('');
+  const [ usernameInput, setUsernameInput ] = useState('');
+  const [ messageInput, setMessageInput ] = useState('');
+  const [ isEmailAlertShown, setIsEmailAlertShown ] = useState(true);
+  const [ isUsernameAlertShown, setIsUsernameAlertShown ] = useState(true);
+  const [ isMessageAlertShown, setIsMessageAlertShown ] = useState(true);
 
   // Handle Mouse Over
-  const handleMouseOver = () => {
-    const alert = " Please fill in the below form field!"
-
+  const handleMouseOver = (content) => {
+    
   }
 
   // Handle form submit
@@ -46,7 +48,7 @@ export default function Contact() {
 
   // Makes sure content is entered
   const validateContent = (content) => {
-    return content !== null || undefined ? true:false;
+    return content !== null || content !== undefined ? true:false;
   }
 
   const validate = () => {
@@ -66,32 +68,41 @@ export default function Contact() {
       <div className="d-flex justify-content-center App">
         <form id="contact-form" >
           <div className="form-group"
-            onMouseEnter={() => setIsShown(true)}
-            onMouseLeave={() => setIsShown(false)}>
+            onMouseLeave={() => handleMouseOver(usernameInput)}>
             <label htmlFor="name"
             value={usernameInput}
-            >Name
-              <span></span>
+            onChange={(e) => setUsernameInput(e.target.value)}>Name
             </label>
+            { isUsernameAlertShown &&
+              <span style={alertStyle}>Please fill in the below form field!</span>
+            }
             <input type="text" className="form-control">
 
             </input>
           </div>
           <div className="form-group"
-            onMouseEnter={() => setIsShown(true)}
-            onMouseLeave={() => setIsShown(false)}>
-            <label htmlFor="exampleInputEmail1">Email address</label>
+            onMouseLeave={() => handleMouseOver(emailInput)}>
+            <label htmlFor="exampleInputEmail1">Email address 
+              { isEmailAlertShown &&
+                  <span style={alertStyle}>Please fill in the below form field!</span>
+              }
+            </label>
             <input type="text" className="form-control"
             value={emailInput}
+            onChange={(e) => setEmailInput(e.target.value)}
             >
             </input>
           </div>
           <div className="form-group"
-            onMouseEnter={() => setIsShown(true)}
-            onMouseLeave={() => setIsShown(false)}>
-            <label htmlFor="message">Message</label>
+            onMouseLeave={() => handleMouseOver(messageInput)}>
+            <label htmlFor="message">Message 
+              {isMessageAlertShown &&
+                <span style={alertStyle}>Please fill in the below form field!</span>
+              }
+            </label>
             <textarea className="form-control" rows="5"
             value={messageInput}
+            onChange={(e) => setMessageInput(e.target.value)}
             >
             
             </textarea>
