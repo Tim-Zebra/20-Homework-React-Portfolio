@@ -31,6 +31,7 @@ export default function Contact() {
 
   // Handle Mouse Over
   const handleMouseOverUser = (content) => {
+    console.log('This happened', usernameInput);
     return content !== null || content !== undefined ? true:false;
   }
 
@@ -115,7 +116,7 @@ export default function Contact() {
             
             </textarea>
           </div>
-          <button type="submit" className="btn" onClick={validate}>Submit</button>
+          <button type="submit" className="btn" id="contactSubmitBtn" onClick={validate}>Submit</button>
         </form>
       </div>
     </section>

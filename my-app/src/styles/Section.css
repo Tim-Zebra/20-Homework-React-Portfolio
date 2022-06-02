@@ -169,6 +169,10 @@ filter:hue-rotate(90deg);
   width: 90%;
 }
 
+#contactSubmitBtn {
+  border: black 2px solid;
+}
+
 /* Section: Resume */
 #resumeBlock {
   margin-bottom: 150px;
