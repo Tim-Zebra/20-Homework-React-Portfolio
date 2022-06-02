@@ -17,11 +17,15 @@ A front-end show case displaying Tim Zalewski's portfolio using React  <br /> <b
 * Use the links to naviagate through the pages, and enjoy yourself!
 
 ## Application Demos:
-<h2 align="center">Title</h2>
-<p align="center"><img src="./demos/.png" alt="image demo" width="800" height="auto"/></p> <br /><br />
-<h2 align="center">Second Title</h2>
-<p align="center"><img src="./demos/.gif" alt="gif demo" width="800" height="auto"/></p> <br />
-<p align="center"><font size="4"><a href="">Video Demo</a></font></p>
+<h2 align="center">About Me</h2>
+<p align="center"><img src="./demos/homepage.png" alt="image demo" width="800" height="auto"/></p> <br /><br />
+<h2 align="center">Portfolio</h2>
+<p align="center"><img src="./demos/demo_portfolioAnimation.gif" alt="gif demo" width="800" height="auto"/></p> <br />
+<h2 align="center">Contact Form</h2>
+<p align="center"><img src="./demos/demo_contactAnimation.gif" alt="gif demo" width="800" height="auto"/></p> <br />
+<h2 align="center">Resume Section</h2>
+<p align="center"><img src="./demos/demo_resumeAnimation.gif" alt="gif demo" width="800" height="auto"/></p> <br />
+<p align="center"><font size="4"><a href="https://drive.google.com/file/d/1mLjXeAkKqRFDjM1MrK35keyXzzyR6wAf/view">Video Demo</a></font></p>
 
 ## Link to Deployed Page:
 
