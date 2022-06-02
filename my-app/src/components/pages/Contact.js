@@ -31,16 +31,15 @@ export default function Contact() {
 
   // Handle Mouse Over
   const handleMouseOverUser = (content) => {
-    console.log('This happened', usernameInput);
-    return content !== null || content !== undefined ? true:false;
+    return content === ('') ? true:false;
   }
 
   const handleMouseOverEmail = (content) => {
-    return content !== null || content !== undefined ? true:false;
+    return content === ('') ? true:false;
   }
 
   const handleMouseOverMessage = (content) => {
-    return content !== null || content !== undefined ? true:false;
+    return content === ('') ? true:false;
   }
 
   // Handle form submit
@@ -64,11 +63,17 @@ export default function Contact() {
 
     // Resets fields if valid info
     if(isUsername && isEmail && isMessage) {
+      setUsernameInput('');
+      setEmailInput('');
+      setMessageInput('');
       setIsUsername(false);
-      isEmail(false);
-      isMessage(false);
+      setIsEmail(false);
+      setIsMessage(false);
+      setIsUsernameAlertShown(false);
+      setIsEmailAlertShown(false);
+      setIsMessageAlertShown(false);
+      return;
     }
-    return 
   }
 
   return (
@@ -78,24 +83,22 @@ export default function Contact() {
         <form id="contact-form" >
           <div className="form-group"
             onMouseLeave={() => setIsUsernameAlertShown(handleMouseOverUser(usernameInput))}>
-            <label htmlFor="name"
-            value={usernameInput}
-            onChange={(e) => setUsernameInput(e.target.value)}>Name
-            </label>
+            <label htmlFor="name">Name</label>
             { isUsernameAlertShown &&
               <span style={alertStyle}>Please fill in the below form field!</span>
             }
-            <input type="text" className="form-control">
-
+            <input type="text" className="form-control"
+            value={usernameInput}
+            onChange={(e) => setUsernameInput(e.target.value)}
+            >
             </input>
           </div>
           <div className="form-group"
             onMouseLeave={() => setIsEmailAlertShown(handleMouseOverEmail(emailInput))}>
-            <label htmlFor="exampleInputEmail1">Email address 
-              { isEmailAlertShown &&
-                  <span style={alertStyle}>Please fill in the below form field!</span>
-              }
-            </label>
+            <label htmlFor="exampleInputEmail1">Email address</label>
+            { isEmailAlertShown &&
+                <span style={alertStyle}>Please fill in the below form field!</span>
+            }
             <input type="text" className="form-control"
             value={emailInput}
             onChange={(e) => setEmailInput(e.target.value)}
@@ -104,16 +107,14 @@ export default function Contact() {
           </div>
           <div className="form-group"
             onMouseLeave={() => setIsMessageAlertShown(handleMouseOverMessage(messageInput))}>
-            <label htmlFor="message">Message 
-              {isMessageAlertShown &&
+            <label htmlFor="message">Message</label>
+            {isMessageAlertShown &&
                 <span style={alertStyle}>Please fill in the below form field!</span>
-              }
-            </label>
+            }
             <textarea className="form-control" rows="5"
             value={messageInput}
             onChange={(e) => setMessageInput(e.target.value)}
             >
-            
             </textarea>
           </div>
           <button type="submit" className="btn" id="contactSubmitBtn" onClick={validate}>Submit</button>
