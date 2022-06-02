@@ -117,8 +117,6 @@ filter:hue-rotate(90deg);
   width: 150px;
 }
 
-
-
 .projectGithubLink > div > a > img {
   position: relative;
   left: -20px;
@@ -194,7 +192,6 @@ filter:hue-rotate(90deg);
     align-self: center;
   }
 }
-
 
 @media only screen and (max-height: 600px) {
   #resumeBlock {

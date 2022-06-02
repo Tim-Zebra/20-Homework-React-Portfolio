@@ -9,19 +9,21 @@
 import React, {useState} from 'react';
 
 export default function Contact() {
-  // Creates a style for an alert message
+  // Creates a style for an alert messages
   const alertStyle = {
     color: 'red',
     textDecorationLine: 'underline',
     display: 'block',
   }
 
-  // Variables for validating content  
-  const [ isUsername, setIsUsername ] = useState(false);
-  const [ isEmail, setIsEmail ] = useState(false);
-  const [ isMessage, setIsMessage ] = useState(false);
+  const btnAlertStyle = {
+    color: 'red',
+    textDecorationLine: 'underline',
+    display: 'block',
+    margin_left: '20px',
+  }
 
-  // Variables for input content present  
+  // Variables for input content and validation  
   const [ usernameInput, setUsernameInput ] = useState('');
   const [ emailInput, setEmailInput ] = useState('');
   const [ messageInput, setMessageInput ] = useState('');
@@ -29,6 +31,8 @@ export default function Contact() {
   const [ isEmailAlertShown, setIsEmailAlertShown ] = useState(false);
   const [ isMessageAlertShown, setIsMessageAlertShown ] = useState(false);
   const [ isEmailValid, setIsEmailValid ] = useState(true);
+
+  const [ submitOkay, setSubmitOkay ] = useState(true);
   // Handle Mouse Over
   const handleMouseOverUser = (content) => {
     return content === ('') ? true:false;
@@ -54,22 +58,23 @@ export default function Contact() {
       return email.match(validEmail);
   }
 
-  const validate = () => {
+  const validate = (event) => {
 
+
+    console.log('This happened', usernameInput, emailInput, messageInput);
     // Resets fields if valid info
-    if(isUsername && isEmail && isMessage && !isUsernameAlertShown && !isEmailAlertShown && !isMessageAlertShown && isEmailValid) {
-      setUsernameInput('');
-      setEmailInput('');
-      setMessageInput('');
-      setIsUsername(false);
-      setIsEmail(false);
-      setIsMessage(false);
-      setIsUsernameAlertShown(false);
-      setIsEmailAlertShown(false);
-      setIsMessageAlertShown(false);
-      return;
+    if(usernameInput && emailInput && messageInput && !isUsernameAlertShown && !isEmailAlertShown && !isMessageAlertShown && isEmailValid) {
+        setUsernameInput('');
+        setEmailInput('');
+        setMessageInput('');
+        setIsUsernameAlertShown(false);
+        setIsEmailAlertShown(false);
+        setIsMessageAlertShown(false);
+        setSubmitOkay(true);
+    } 
+    else {
+      setSubmitOkay(false);
     }
-
   }
 
   return (
@@ -81,7 +86,7 @@ export default function Contact() {
             onMouseLeave={() => setIsUsernameAlertShown(handleMouseOverUser(usernameInput))}>
             <label htmlFor="name">Name</label>
             { isUsernameAlertShown &&
-              <span style={alertStyle}>Please fill in the below form field!</span>
+              <span style={alertStyle}>Please fill in the section below!</span>
             }
             <input type="text" className="form-control"
             value={usernameInput}
@@ -93,7 +98,7 @@ export default function Contact() {
             onMouseLeave={() => {setIsEmailAlertShown(handleMouseOverEmail(emailInput)); setIsEmailValid(validateEmail(emailInput));}}>
             <label htmlFor="exampleInputEmail1">Email address</label>
             { isEmailAlertShown &&
-                <span style={alertStyle}>Please fill in the below form field!</span>
+                <span style={alertStyle}>Please fill in the section below!</span>
             }
             { !isEmailAlertShown && !isEmailValid &&
                 <span style={alertStyle}>Invalid EMAIL!</span>
@@ -108,7 +113,7 @@ export default function Contact() {
             onMouseLeave={() => setIsMessageAlertShown(handleMouseOverMessage(messageInput))}>
             <label htmlFor="message">Message</label>
             {isMessageAlertShown &&
-                <span style={alertStyle}>Please fill in the below form field!</span>
+                <span style={alertStyle}>Please fill in the section below!</span>
             }
             <textarea className="form-control" rows="5"
             value={messageInput}
@@ -116,7 +121,10 @@ export default function Contact() {
             >
             </textarea>
           </div>
-          <button type="submit" className="btn" id="contactSubmitBtn" onClick={validate}>Submit</button>
+          <button type="submit" className="btn w-100" id="contactSubmitBtn" onClick={validate}>Submit</button>
+          {!submitOkay &&
+            <div style={btnAlertStyle} className="text-center">Please see the above alerts and fix before submitting</div>
+          }
         </form>
       </div>
     </section>
