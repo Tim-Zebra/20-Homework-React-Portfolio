@@ -18,7 +18,14 @@ const linkStyle = {
   transitionDuration: '2s',
 }
 
+const profStyle = {
+  opacity: '0.2',
+  transitionDuration: '1s',
+}
+
 const [ resumeStyle, setResumeStyle] = useState(noStyle);
+const [ frontendProfStyle, setfrontendProfStyle] = useState(noStyle);
+const [ backendProfStyle, setbackendProfStyle] = useState(noStyle);
 
 const resumeStyleChangeActive = () => {
   setResumeStyle(linkStyle);
@@ -26,6 +33,24 @@ const resumeStyleChangeActive = () => {
 
 const resumeStyleChangeInactive = () => {
   setResumeStyle(noStyle);
+}
+
+// Front end section mouse activity
+const frontEndProfActive = () => {
+  setfrontendProfStyle(profStyle);
+}
+
+const backEndProfInactive = () => {
+  setbackendProfStyle(noStyle);
+}
+
+// Backend section mouse activity
+const backEndProfActive = () => {
+  setbackendProfStyle(profStyle);
+}
+
+const frontEndProfInactive = () => {
+  setfrontendProfStyle(noStyle);
 }
 
   return (
@@ -36,8 +61,9 @@ const resumeStyleChangeInactive = () => {
       </div>
       <div id="resumeBlock" className="d-flex row col-12 ml-4 justify-content-around proficienciesBlock">
         <div id="frontendProficiences" className="col-lg-4 col-md-6 align-center resumeProficiences"
-        onMouseEnter={() => resumeStyleChangeActive()}
-        onMouseLeave={() => resumeStyleChangeInactive()}>
+        onMouseEnter={() => {resumeStyleChangeActive(); frontEndProfActive();}}
+        onMouseLeave={() => {resumeStyleChangeInactive(); frontEndProfInactive();}}
+        style={frontendProfStyle}>
           <h4>
             Front-End Proficiences
             <ul>
@@ -52,8 +78,9 @@ const resumeStyleChangeInactive = () => {
           </h4>
         </div>
         <div id="backendProficiences" className="col-lg-4 col-md-6 align-center resumeProficiences"
-        onMouseEnter={() => resumeStyleChangeActive()}
-        onMouseLeave={() => resumeStyleChangeInactive()}>
+        onMouseEnter={() => {resumeStyleChangeActive(); backEndProfActive();}}
+        onMouseLeave={() => {resumeStyleChangeInactive(); backEndProfInactive();}}
+        style={backendProfStyle}>
           <h4>
             Back-End Proficiences
             <ul>
