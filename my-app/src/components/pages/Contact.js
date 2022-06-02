@@ -28,7 +28,7 @@ export default function Contact() {
   const [ isUsernameAlertShown, setIsUsernameAlertShown ] = useState(false);
   const [ isEmailAlertShown, setIsEmailAlertShown ] = useState(false);
   const [ isMessageAlertShown, setIsMessageAlertShown ] = useState(false);
-
+  const [ isEmailValid, setIsEmailValid ] = useState(true);
   // Handle Mouse Over
   const handleMouseOverUser = (content) => {
     return content === ('') ? true:false;
@@ -51,12 +51,7 @@ export default function Contact() {
     );
 
     // confirms match
-
-  }
-
-  // Makes sure content is entered
-  const validateContent = () => {
-
+      return email.match(validEmail);
   }
 
   const validate = () => {
@@ -74,7 +69,6 @@ export default function Contact() {
       setIsMessageAlertShown(false);
       return;
     }
-    if(!isUsername)
 
   }
 
@@ -96,10 +90,13 @@ export default function Contact() {
             </input>
           </div>
           <div className="form-group"
-            onMouseLeave={() => setIsEmailAlertShown(handleMouseOverEmail(emailInput))}>
+            onMouseLeave={() => {setIsEmailAlertShown(handleMouseOverEmail(emailInput)); setIsEmailValid(validateEmail(emailInput));}}>
             <label htmlFor="exampleInputEmail1">Email address</label>
             { isEmailAlertShown &&
                 <span style={alertStyle}>Please fill in the below form field!</span>
+            }
+            { !isEmailAlertShown && !isEmailValid &&
+                <span style={alertStyle}>Invalid EMAIL!</span>
             }
             <input type="text" className="form-control"
             value={emailInput}
