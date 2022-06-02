@@ -1,5 +1,3 @@
-// Header "Portfolio"
-// Images for each project wanting to display
 import React from 'react';
 import Project from './portfolio/Project'
 

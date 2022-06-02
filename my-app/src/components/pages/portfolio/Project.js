@@ -1,9 +1,3 @@
-// Displays each individual project
-
-// Effects:
-// When mouse hovers over:
-// Fade image, show Name (link to deployed page), Github Icon (link to git hub), name of programs used (eg. MERN stack )
-// Need 6 apps
 import React, {useState} from 'react';
 import IconCreator from '../../../utils/IconCreator'
 
@@ -16,6 +10,7 @@ const iconLinkObj= {
 
 // Mouse enter effects
   const [isShown, setIsShown] = useState(false);
+  
   return (
     <div className='col-lg-6 col-md-9 col-sm-9 col-9 my-3 projectDiv'
     onMouseEnter={() => setIsShown(true)}

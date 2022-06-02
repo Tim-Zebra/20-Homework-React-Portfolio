@@ -1,7 +1,3 @@
-// Header "About Me"
-// Profile Photo
-// Paragraph x2 about me
-
 import React from 'react';
 
 export default function About() {

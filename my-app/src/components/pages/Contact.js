@@ -1,11 +1,3 @@
-// Header "Contact"
-// Form:
-// Name:
-// Email:
-// Message:
-// Submit (Validate, all fields must be filled in. Validate Email.)
-// If validation fails, show short message why above submit button
-// Contact form inspired by Aleksandr Varnin https://mailtrap.io/blog/react-contact-form/
 import React, {useState} from 'react';
 
 export default function Contact() {
@@ -59,9 +51,6 @@ export default function Contact() {
   }
 
   const validate = (event) => {
-
-
-    console.log('This happened', usernameInput, emailInput, messageInput);
     // Resets fields if valid info
     if(usernameInput && emailInput && messageInput && !isUsernameAlertShown && !isEmailAlertShown && !isMessageAlertShown && isEmailValid) {
         setUsernameInput('');

@@ -1,32 +1,32 @@
-// Header "Resume"
-// Download Resume option
-// List of proficiences
-// Front End
-// Back End
 import React, {useState} from 'react';
 import pdf from '../../assets/resume.pdf';
 
 export default function Resume() {
 // Styles for resume
+// style reset
 const noStyle = {
   transitionDuration: '0.5s',
 };
 
+// style for resume link
 const linkStyle = {
   color: 'red',
   fontSize: '40px',
   transitionDuration: '2s',
 }
 
+// style for proficiencies 
 const profStyle = {
   opacity: '0.2',
   transitionDuration: '1s',
 }
 
+// Variables to handle style change
 const [ resumeStyle, setResumeStyle] = useState(noStyle);
 const [ frontendProfStyle, setfrontendProfStyle] = useState(noStyle);
 const [ backendProfStyle, setbackendProfStyle] = useState(noStyle);
 
+// function to handle resume style change
 const resumeStyleChangeActive = () => {
   setResumeStyle(linkStyle);
 }
@@ -35,7 +35,7 @@ const resumeStyleChangeInactive = () => {
   setResumeStyle(noStyle);
 }
 
-// Front end section mouse activity
+// Front end section mouse activity style change
 const frontEndProfActive = () => {
   setfrontendProfStyle(profStyle);
 }
@@ -44,7 +44,7 @@ const backEndProfInactive = () => {
   setbackendProfStyle(noStyle);
 }
 
-// Backend section mouse activity
+// Backend section mouse activity style change
 const backEndProfActive = () => {
   setbackendProfStyle(profStyle);
 }
