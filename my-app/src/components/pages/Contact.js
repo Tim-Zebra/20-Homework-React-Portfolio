@@ -16,22 +16,30 @@ export default function Contact() {
     display: 'block',
   }
 
-  // Variables for validating content
-  const [ isEmail, setIsEmail ] = useState(false);
+  // Variables for validating content  
   const [ isUsername, setIsUsername ] = useState(false);
+  const [ isEmail, setIsEmail ] = useState(false);
   const [ isMessage, setIsMessage ] = useState(false);
 
-  // Variables for input content present
-  const [ emailInput, setEmailInput ] = useState('');
+  // Variables for input content present  
   const [ usernameInput, setUsernameInput ] = useState('');
+  const [ emailInput, setEmailInput ] = useState('');
   const [ messageInput, setMessageInput ] = useState('');
-  const [ isEmailAlertShown, setIsEmailAlertShown ] = useState(true);
-  const [ isUsernameAlertShown, setIsUsernameAlertShown ] = useState(true);
-  const [ isMessageAlertShown, setIsMessageAlertShown ] = useState(true);
+  const [ isUsernameAlertShown, setIsUsernameAlertShown ] = useState(false);
+  const [ isEmailAlertShown, setIsEmailAlertShown ] = useState(false);
+  const [ isMessageAlertShown, setIsMessageAlertShown ] = useState(false);
 
   // Handle Mouse Over
-  const handleMouseOver = (content) => {
-    
+  const handleMouseOverUser = (content) => {
+    return content !== null || content !== undefined ? true:false;
+  }
+
+  const handleMouseOverEmail = (content) => {
+    return content !== null || content !== undefined ? true:false;
+  }
+
+  const handleMouseOverMessage = (content) => {
+    return content !== null || content !== undefined ? true:false;
   }
 
   // Handle form submit
@@ -48,7 +56,7 @@ export default function Contact() {
 
   // Makes sure content is entered
   const validateContent = (content) => {
-    return content !== null || content !== undefined ? true:false;
+
   }
 
   const validate = () => {
@@ -68,7 +76,7 @@ export default function Contact() {
       <div className="d-flex justify-content-center App">
         <form id="contact-form" >
           <div className="form-group"
-            onMouseLeave={() => handleMouseOver(usernameInput)}>
+            onMouseLeave={() => setIsUsernameAlertShown(handleMouseOverUser(usernameInput))}>
             <label htmlFor="name"
             value={usernameInput}
             onChange={(e) => setUsernameInput(e.target.value)}>Name
@@ -81,7 +89,7 @@ export default function Contact() {
             </input>
           </div>
           <div className="form-group"
-            onMouseLeave={() => handleMouseOver(emailInput)}>
+            onMouseLeave={() => setIsEmailAlertShown(handleMouseOverEmail(emailInput))}>
             <label htmlFor="exampleInputEmail1">Email address 
               { isEmailAlertShown &&
                   <span style={alertStyle}>Please fill in the below form field!</span>
@@ -94,7 +102,7 @@ export default function Contact() {
             </input>
           </div>
           <div className="form-group"
-            onMouseLeave={() => handleMouseOver(messageInput)}>
+            onMouseLeave={() => setIsMessageAlertShown(handleMouseOverMessage(messageInput))}>
             <label htmlFor="message">Message 
               {isMessageAlertShown &&
                 <span style={alertStyle}>Please fill in the below form field!</span>
